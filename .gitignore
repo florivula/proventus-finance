@@ -1,4 +1,6 @@
 node_modules/
 .wrangler/
+.cf-wrangler/
 .dev.vars
 *.log
+*-upload.zip

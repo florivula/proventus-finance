@@ -7,7 +7,7 @@ Static credibility website for Proventus Finance. The public build is the `publi
 - `npm install`
 - `npm run dev` serves `public/` on port 4287 through Wrangler.
 - `npm run check` runs the local structural verifier.
-- `npm run deploy` publishes `public/` to Cloudflare Pages project `proventus-finance`.
+- `npm run deploy` publishes `public/` to Cloudflare Pages project `proventus-finance` only after `tools/deploy.ps1` confirms the isolated Wrangler session belongs to `flori@ai-rise.ai`.
 
 ## Visual direction
 

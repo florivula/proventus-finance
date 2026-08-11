@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 const root = fileURLToPath(new URL('../', import.meta.url));
 const publicDir = join(root, 'public');
 const required = [
-  'index.html', 'privacy.html', '404.html', 'styles.css', 'script.js', '_headers',
+  'index.html', 'privacy.html', '404.html', 'styles.css', 'script.js', '_headers', 'sitemap.xml',
   'assets/proventus-mark.svg', 'assets/proventus-lockup.svg', 'assets/proventus-finance-og.png'
 ];
 

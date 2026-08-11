@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "wrangler pages dev public --port 4287",
     "check": "node tools/check-site.mjs",
-    "deploy": "wrangler pages deploy public --project-name=proventus-finance --branch=main"
+    "deploy": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/deploy.ps1"
   },
   "devDependencies": {
     "wrangler": "4.28.1"
