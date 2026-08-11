@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 222 44" fill="none" color="#F5F0E5">
+  <title>Proventus Finance</title>
+  <g transform="translate(1 1) scale(.65625)" color="currentColor">
+    <path d="M16 52V12h19.5C45.2 12 51 17.2 51 25.1c0 8.3-5.8 13.6-15.5 13.6H16" stroke="currentColor" stroke-width="4.5" stroke-linecap="square" stroke-linejoin="round"/>
+    <path d="M24 21h14M24 29.5h11" stroke="currentColor" stroke-width="3" stroke-linecap="square"/>
+    <path d="m30 46 7 6 13-14" stroke="#7CDFAE" stroke-width="4" stroke-linecap="square" stroke-linejoin="miter"/>
+  </g>
+  <text x="52" y="20" fill="currentColor" font-family="Manrope, Arial, sans-serif" font-size="15.5" font-weight="650" letter-spacing=".2">Proventus</text>
+  <text x="53" y="34" fill="currentColor" font-family="DM Mono, monospace" font-size="8.2" font-weight="400" letter-spacing="2.8">FINANCE</text>
+</svg>
