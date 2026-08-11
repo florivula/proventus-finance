@@ -14,11 +14,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=20260811">
+  <link rel="stylesheet" href="/styles.css?v=20260811-2">
   <title>Proventus Finance | Accounting made clear</title>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"><span data-scroll-progress></span></div>
 
   <header class="site-header" data-header>
     <a class="brand" href="#top" aria-label="Proventus Finance home">
@@ -31,10 +32,11 @@
 
     <nav id="site-nav" class="site-nav" aria-label="Primary navigation" data-nav>
       <a href="#services">Services</a>
+      <a href="#inside">Inside</a>
       <a href="#approach">How we work</a>
       <a href="#reporting">Reporting</a>
       <a href="#questions">Questions</a>
-      <a class="nav-cta" href="#contact">Plan a consultation <span aria-hidden="true">↗</span></a>
+      <a class="nav-cta" href="#contact">Plan a consultation <span class="arrow-icon" aria-hidden="true"></span></a>
     </nav>
   </header>
 
@@ -48,8 +50,8 @@
         <h1>Clarity, carried through <em>every number.</em></h1>
         <p class="hero-intro">Proventus Finance brings accounting, payroll, VAT, tax declarations and financial reporting into one calm, dependable rhythm.</p>
         <div class="hero-actions">
-          <a class="button button-bright" href="#contact">Plan a consultation <span aria-hidden="true">↗</span></a>
-          <a class="text-link light" href="#services">Explore our services <span aria-hidden="true">↓</span></a>
+          <a class="button button-bright" href="#contact">Plan a consultation <span class="arrow-icon" aria-hidden="true"></span></a>
+          <a class="text-link light" href="#services">Explore our services <span class="down-icon" aria-hidden="true"></span></a>
         </div>
         <div class="hero-proof" aria-label="Core service principles">
           <div><span class="proof-dot"></span><strong>Current</strong><small>Records kept useful</small></div>
@@ -65,8 +67,8 @@
             <span class="status"><i></i> In rhythm</span>
           </div>
 
-          <div class="orbit-stage" aria-hidden="true">
-            <svg class="orbit-lines" viewBox="0 0 520 520" role="presentation">
+          <div class="orbit-stage">
+            <svg class="orbit-lines" viewBox="0 0 520 520" role="presentation" aria-hidden="true">
               <defs>
                 <linearGradient id="ringGlow" x1="0" y1="0" x2="1" y2="1">
                   <stop offset="0" stop-color="#caff77" stop-opacity="0.15"/>
@@ -90,17 +92,17 @@
               </circle>
             </svg>
 
-            <div class="monogram-core">
-              <span class="core-kicker">CONTROL</span>
+            <a class="monogram-core" href="#service-accounting" data-engine-link aria-label="View Accounting service">
+              <span class="core-kicker" data-core-kicker>Accounting</span>
               <img src="/assets/proventus-mark.svg" width="82" height="82" alt="">
-              <span class="core-state">All connected</span>
-            </div>
+              <span class="core-state" data-core-state>Current</span>
+            </a>
 
-            <div class="engine-tag tag-one"><span>01</span> Accounting <i>Current</i></div>
-            <div class="engine-tag tag-two"><span>02</span> Payroll <i>On track</i></div>
-            <div class="engine-tag tag-three"><span>03</span> VAT <i>Prepared</i></div>
-            <div class="engine-tag tag-four"><span>04</span> Tax <i>Reviewed</i></div>
-            <div class="engine-tag tag-five"><span>05</span> Reporting <i>Clear</i></div>
+            <button class="engine-tag tag-one active" type="button" data-service="accounting" data-target="#service-accounting" data-kicker="Accounting" data-state="Current" aria-pressed="true"><span>01</span> Accounting <i>Current</i></button>
+            <button class="engine-tag tag-two" type="button" data-service="payroll" data-target="#service-payroll" data-kicker="Payroll" data-state="On track" aria-pressed="false"><span>02</span> Payroll <i>On track</i></button>
+            <button class="engine-tag tag-three" type="button" data-service="vat" data-target="#service-vat" data-kicker="VAT" data-state="Prepared" aria-pressed="false"><span>03</span> VAT <i>Prepared</i></button>
+            <button class="engine-tag tag-four" type="button" data-service="tax" data-target="#service-tax" data-kicker="Tax" data-state="Reviewed" aria-pressed="false"><span>04</span> Tax <i>Reviewed</i></button>
+            <button class="engine-tag tag-five" type="button" data-service="reporting" data-target="#service-reporting" data-kicker="Reporting" data-state="Clear" aria-pressed="false"><span>05</span> Reporting <i>Clear</i></button>
           </div>
 
           <div class="engine-footer">
@@ -122,37 +124,66 @@
       </div>
 
       <div class="service-list">
-        <article class="service-row reveal">
+        <a id="service-accounting" class="service-row reveal" href="mailto:hello@proventusfinance.com?subject=Accounting%20consultation%20-%20Proventus%20Finance">
           <span class="service-number">01</span>
           <div class="service-title"><h3>Accounting</h3><span>Accurate records, kept current</span></div>
           <p>Transactions are organised, reconciled and closed with a consistent process, so the books remain useful throughout the year.</p>
           <div class="service-icon" aria-hidden="true"><i></i><i></i><i></i></div>
-        </article>
-        <article class="service-row reveal">
+        </a>
+        <a id="service-payroll" class="service-row reveal" href="mailto:hello@proventusfinance.com?subject=Payroll%20consultation%20-%20Proventus%20Finance">
           <span class="service-number">02</span>
           <div class="service-title"><h3>Payroll</h3><span>A dependable monthly rhythm</span></div>
           <p>Payroll inputs, calculations and records move through one visible workflow, with the details checked before the deadline.</p>
           <div class="service-icon payroll-icon" aria-hidden="true"><i></i><i></i><i></i></div>
-        </article>
-        <article class="service-row reveal">
+        </a>
+        <a id="service-vat" class="service-row reveal" href="mailto:hello@proventusfinance.com?subject=VAT%20consultation%20-%20Proventus%20Finance">
           <span class="service-number">03</span>
           <div class="service-title"><h3>VAT</h3><span>Prepared without the scramble</span></div>
           <p>VAT records are assembled and reviewed as part of the regular accounting cycle, not discovered when a declaration is due.</p>
           <div class="service-icon vat-icon" aria-hidden="true"><i></i><i></i><i></i></div>
-        </article>
-        <article class="service-row reveal">
+        </a>
+        <a id="service-tax" class="service-row reveal" href="mailto:hello@proventusfinance.com?subject=Tax%20declarations%20consultation%20-%20Proventus%20Finance">
           <span class="service-number">04</span>
           <div class="service-title"><h3>Tax declarations</h3><span>Complete, reviewed, submitted</span></div>
           <p>The information behind each declaration is organised in advance, checked for consistency and prepared for timely submission.</p>
           <div class="service-icon tax-icon" aria-hidden="true"><i></i><i></i><i></i></div>
-        </article>
-        <article class="service-row reveal">
+        </a>
+        <a id="service-reporting" class="service-row reveal" href="mailto:hello@proventusfinance.com?subject=Financial%20reporting%20consultation%20-%20Proventus%20Finance">
           <span class="service-number">05</span>
           <div class="service-title"><h3>Financial reporting</h3><span>Numbers you can actually use</span></div>
           <p>Clear reports turn the period into a decision-ready view of performance, position and the questions worth asking next.</p>
           <div class="service-icon report-icon" aria-hidden="true"><i></i><i></i><i></i></div>
-        </article>
+        </a>
       </div>
+    </section>
+
+    <section id="inside" class="office-section" data-office>
+      <div class="office-copy reveal">
+        <p class="eyebrow"><span></span> The feeling, made visible</p>
+        <h2>A quieter place<br><em>for the numbers to land.</em></h2>
+        <p>Clear financial work has a shape: one intake, a visible review and an explanation that arrives ready to use.</p>
+
+        <div class="office-tabs" role="tablist" aria-label="Explore the Proventus working rhythm">
+          <button type="button" role="tab" aria-selected="true" data-office-tab="collect"><span>01</span> Collect</button>
+          <button type="button" role="tab" aria-selected="false" data-office-tab="review"><span>02</span> Review</button>
+          <button type="button" role="tab" aria-selected="false" data-office-tab="explain"><span>03</span> Explain</button>
+        </div>
+
+        <div class="office-detail" aria-live="polite">
+          <span data-office-label>Collection</span>
+          <h3 data-office-title>One clear intake.</h3>
+          <p data-office-copy>Inputs, owners and timing are agreed before the recurring work begins.</p>
+        </div>
+      </div>
+
+      <figure class="office-image reveal">
+        <img src="/assets/office-reception.webp" width="1672" height="940" loading="lazy" alt="Concept image of a calm green and ivory financial office reception">
+        <img class="office-wall-logo" src="/assets/proventus-lockup.svg" width="300" height="59" alt="">
+        <button class="image-hotspot hotspot-collect active" type="button" data-office-select="collect" aria-label="Show the collection stage"><span>01</span></button>
+        <button class="image-hotspot hotspot-review" type="button" data-office-select="review" aria-label="Show the review stage"><span>02</span></button>
+        <button class="image-hotspot hotspot-explain" type="button" data-office-select="explain" aria-label="Show the explanation stage"><span>03</span></button>
+        <figcaption>Concept environment. The identity artwork is exact.</figcaption>
+      </figure>
     </section>
 
     <section class="control-statement">
@@ -168,8 +199,8 @@
       </div>
 
       <div class="approach-grid">
-        <div class="approach-visual reveal" aria-hidden="true">
-          <div class="calendar-head"><span>PERIOD / 04</span><span>STATUS / CONTROLLED</span></div>
+        <div class="approach-visual reveal" data-approach-visual>
+          <div class="calendar-head"><span data-period-label>PERIOD / INPUT</span><span data-status-label>STATUS / COLLECTING</span></div>
           <div class="calendar-grid">
             <i></i><i></i><i class="active"></i><i></i><i></i><i></i><i></i>
             <i></i><i class="done"></i><i class="done"></i><i class="done"></i><i></i><i></i><i></i>
@@ -183,11 +214,11 @@
           </svg>
         </div>
 
-        <ol class="approach-steps">
-          <li class="reveal"><span>01</span><div><h3>Collect once</h3><p>We establish what arrives, when it arrives and who owns it. The monthly process starts with fewer loose ends.</p></div></li>
-          <li class="reveal"><span>02</span><div><h3>Review in context</h3><p>Records are checked as one financial picture. Issues are surfaced while there is still time to resolve them.</p></div></li>
-          <li class="reveal"><span>03</span><div><h3>Close with confidence</h3><p>Accounting, payroll and declarations reach the finish line through a consistent, visible sequence.</p></div></li>
-          <li class="reveal"><span>04</span><div><h3>Explain what matters</h3><p>You receive the report and the meaning. Clear numbers make for a clearer next decision.</p></div></li>
+        <ol class="approach-steps" data-approach-steps>
+          <li class="reveal active"><button type="button" data-phase="collect" aria-pressed="true"><span>01</span><div><h3>Collect once</h3><p>We establish what arrives, when it arrives and who owns it. The monthly process starts with fewer loose ends.</p></div></button></li>
+          <li class="reveal"><button type="button" data-phase="review" aria-pressed="false"><span>02</span><div><h3>Review in context</h3><p>Records are checked as one financial picture. Issues are surfaced while there is still time to resolve them.</p></div></button></li>
+          <li class="reveal"><button type="button" data-phase="close" aria-pressed="false"><span>03</span><div><h3>Close with confidence</h3><p>Accounting, payroll and declarations reach the finish line through a consistent, visible sequence.</p></div></button></li>
+          <li class="reveal"><button type="button" data-phase="explain" aria-pressed="false"><span>04</span><div><h3>Explain what matters</h3><p>You receive the report and the meaning. Clear numbers make for a clearer next decision.</p></div></button></li>
         </ol>
       </div>
     </section>
@@ -204,23 +235,38 @@
         </ul>
       </div>
 
-      <div class="report-card reveal" aria-label="Illustrative financial reporting interface">
+      <div class="report-card reveal" data-report-card aria-label="Interactive illustrative financial reporting interface">
         <div class="report-card-top"><span>MANAGEMENT VIEW / PERIOD</span><span class="status"><i></i> Ready</span></div>
-        <div class="report-metric">
-          <span>Financial position</span>
-          <strong>Visible</strong>
-          <small>Compared with the prior period</small>
+        <div class="report-metric" aria-live="polite">
+          <span>Selected checkpoint</span>
+          <strong data-report-state>Reporting</strong>
+          <small data-report-note>Management view ready</small>
         </div>
-        <div class="bar-chart" aria-hidden="true">
-          <i style="--h:42%"></i><i style="--h:54%"></i><i style="--h:48%"></i><i style="--h:70%"></i><i style="--h:64%"></i><i style="--h:82%"></i><i class="current" style="--h:91%"></i>
+        <div class="bar-chart" role="group" aria-label="Choose a checkpoint in the illustrative monthly workflow">
+          <button type="button" style="--h:42%" data-report-bar data-state="Intake" data-note="Source records received" aria-pressed="false"><span>P1</span></button>
+          <button type="button" style="--h:54%" data-report-bar data-state="Records" data-note="Transactions organised" aria-pressed="false"><span>P2</span></button>
+          <button type="button" style="--h:48%" data-report-bar data-state="Payroll" data-note="Monthly run prepared" aria-pressed="false"><span>P3</span></button>
+          <button type="button" style="--h:70%" data-report-bar data-state="VAT" data-note="Declaration reviewed" aria-pressed="false"><span>P4</span></button>
+          <button type="button" style="--h:64%" data-report-bar data-state="Tax" data-note="Filing position checked" aria-pressed="false"><span>P5</span></button>
+          <button type="button" style="--h:82%" data-report-bar data-state="Close" data-note="Period brought together" aria-pressed="false"><span>P6</span></button>
+          <button class="current" type="button" style="--h:91%" data-report-bar data-state="Reporting" data-note="Management view ready" aria-pressed="true"><span>P7</span></button>
         </div>
         <div class="report-lines">
           <div><span>Records</span><i><b style="--w:91%"></b></i><strong>Aligned</strong></div>
           <div><span>Declarations</span><i><b style="--w:78%"></b></i><strong>Prepared</strong></div>
           <div><span>Reporting</span><i><b style="--w:86%"></b></i><strong>Ready</strong></div>
         </div>
-        <p class="report-note"><span>↗</span> The point is not more data. It is a clearer view of the business.</p>
+        <p class="report-note"><span class="note-mark" aria-hidden="true"></span><span>The point is not more data. Select a bar to see how the monthly view comes together.</span></p>
       </div>
+
+      <figure class="review-image reveal">
+        <img src="/assets/monthly-review.webp" width="1536" height="1024" loading="lazy" alt="Concept image of an orderly monthly review table with a ledger and document folders">
+        <figcaption>
+          <span>Behind the management view</span>
+          <strong>Source work, ordered before it is explained.</strong>
+          <a href="mailto:hello@proventusfinance.com?subject=Financial%20reporting%20consultation%20-%20Proventus%20Finance">Discuss your reporting cycle <span class="arrow-icon" aria-hidden="true"></span></a>
+        </figcaption>
+      </figure>
     </section>
 
     <section class="section fit-section">
@@ -229,9 +275,9 @@
         <h2>Built for businesses<br><em>that have outgrown guesswork.</em></h2>
       </div>
       <div class="fit-cards">
-        <article class="fit-card reveal"><span>01</span><h3>The work is growing.</h3><p>More transactions, more people or more obligations are making the finance function harder to hold together.</p></article>
-        <article class="fit-card reveal"><span>02</span><h3>The picture arrives late.</h3><p>The books eventually close, but the information is not ready when the business needs to make a decision.</p></article>
-        <article class="fit-card reveal"><span>03</span><h3>Too much lives in one head.</h3><p>Key context sits with one person instead of inside a process the business can see and rely on.</p></article>
+        <a class="fit-card reveal" href="#contact"><span>01</span><h3>The work is growing.</h3><p>More transactions, more people or more obligations are making the finance function harder to hold together.</p><span class="card-action">Start here <i class="arrow-icon" aria-hidden="true"></i></span></a>
+        <a class="fit-card reveal" href="#contact"><span>02</span><h3>The picture arrives late.</h3><p>The books eventually close, but the information is not ready when the business needs to make a decision.</p><span class="card-action">Start here <i class="arrow-icon" aria-hidden="true"></i></span></a>
+        <a class="fit-card reveal" href="#contact"><span>03</span><h3>Too much lives in one head.</h3><p>Key context sits with one person instead of inside a process the business can see and rely on.</p><span class="card-action">Start here <i class="arrow-icon" aria-hidden="true"></i></span></a>
       </div>
     </section>
 
@@ -272,7 +318,7 @@
         <p class="eyebrow light"><span></span> Your next clear step</p>
         <h2>Bring us the part<br><em>that feels messy.</em></h2>
         <p>Tell us what is taking too long, arriving too late or becoming difficult to trust. We will start there.</p>
-        <a class="button button-bright button-large" href="mailto:hello@proventusfinance.com?subject=Consultation%20request%20%E2%80%94%20Proventus%20Finance">Plan a consultation <span aria-hidden="true">↗</span></a>
+        <a class="button button-bright button-large" href="mailto:hello@proventusfinance.com?subject=Consultation%20request%20-%20Proventus%20Finance">Plan a consultation <span class="arrow-icon" aria-hidden="true"></span></a>
         <small>No long brief needed. A few sentences are enough.</small>
       </div>
     </section>
@@ -290,11 +336,11 @@
       <a href="/privacy">Privacy</a>
     </div>
     <div class="footer-meta">
-      <span>© <span data-year></span> Proventus Finance</span>
+      <span>Copyright <span data-year></span> Proventus Finance</span>
       <a class="airise-credit" href="https://ai-rise.ai" target="_blank" rel="noreferrer">Intelligence powered by Airise</a>
     </div>
   </footer>
 
-  <script src="/script.js?v=20260811" defer></script>
+  <script src="/script.js?v=20260811-2" defer></script>
 </body>
 </html>
